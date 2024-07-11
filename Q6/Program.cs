@@ -17,7 +17,7 @@ foreach (string line in lines)
 
 
 
-    if (values[0][0] == 'B' )//if the first letter of the persons name is B - which is apart of the question
+    if (values[0][0] == 'B' )//if the first letter of the persons name is B - which is apart of the questiond
     {//and they have 
 
         // the number of owners with a name that begins with "B" who have less than 3 dogs. [question]
