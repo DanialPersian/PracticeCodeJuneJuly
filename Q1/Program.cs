@@ -1,12 +1,7 @@
-﻿int[] array = new int[20];
-
-for (int i = 0; i < array.Length; i ++) //this was i+=2 but i changed it to i++
+﻿int[] intarray = new int[10];
+int count = 0;
+while (count < 10)
 {
-    if (i % 2 == 1)
-    {
-        array[i] = 1;
-    }
-
+    intarray[count] = 5;
+    count++;
 }
-
-Console.WriteLine(array[5]); //i am testing it out like this 
