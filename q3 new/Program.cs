@@ -1,6 +1,7 @@
 ﻿int BingBangBONG = 0;
 
-for(int i = 0; i < 100; i++)
+
+for (int i = 0; i <= 100; i++)
 {
     if(i % 3 == 0 && i % 5 == 0)
     {
@@ -19,7 +20,7 @@ int isString(string num)
     int isString = 0;
     foreach (char c in num)
     {
-        
+
         return isString += c-'0';
     }
     return isString;
