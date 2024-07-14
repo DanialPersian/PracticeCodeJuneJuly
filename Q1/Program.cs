@@ -1,7 +1,5 @@
-﻿int[] intarray = new int[10];
-int count = 0;
-while (count < 10)
+﻿int[] integers = new int[100];
+for (int i = 0; i <= 100; i++)
 {
-    intarray[count] = 5;
-    count++;
+    integers[i] = i + 1;
 }
