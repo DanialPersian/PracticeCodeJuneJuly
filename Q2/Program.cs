@@ -1,10 +1,3 @@
-﻿using System.Diagnostics.CodeAnalysis;
+﻿string words = "Danial,micheal,scott,human ";
 
-string myVariable = "Hello World";
-
-Console.WriteLine(StringToCaps(myVariable));
-
-string StringToCaps(string toCapitalise)
-{
-    return toCapitalise.ToUpper();
-}
+Console.WriteLine(words.Split(','));
