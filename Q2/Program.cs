@@ -11,12 +11,10 @@ foreach (string line in lines)
 
     string Oname = parts[0];
 
-    foreach (var a in Oname)
-    {
-        Console.WriteLine(a);
-    }
-}
 
+}
+Console.WriteLine("watcj" +
+    "");
 
 
 
