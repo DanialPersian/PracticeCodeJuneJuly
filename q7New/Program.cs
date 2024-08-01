@@ -11,3 +11,17 @@ for (int rowIndex = 0; rowIndex < grid.GetLength(0); rowIndex++)
         numbers.Add(grid[rowIndex, columnIndex]);
     }
 }
+
+static int FindLargestNumberWithFourLargerNeighbours(int[,] grid)
+{
+    int maxNumber = int.MinValue;
+    int DanialRows = grid.GetLength(0);
+    int DanialColumns = grid.GetLength(1);
+
+    //iterating through the grid , skipping edges
+
+    for(int i = 1; i < DanialRows - 1; i++)
+    {
+
+    }
+}
