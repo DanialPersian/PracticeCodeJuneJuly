@@ -1,5 +1,14 @@
-﻿int[] integers = new int[100];
-for (int i = 0; i <= 100; i++)
+﻿string ques = "ab1cd23ef4gh";
+
+foreach(char c in ques)
 {
-    integers[i] = i + 1;
+    if c.con
 }
+
+string constant(string s)
+{
+    if(s.Contains("b, c, d, f, g, h, j, k, l, m, n, p, q, r, s, t, v, w, x, y, z")
+    {
+
+
+    }
