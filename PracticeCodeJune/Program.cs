@@ -1,28 +1,37 @@
-﻿string question = "ab1cd23ef4gh";
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
-char[] consonant = {'b', 'c', 'd','f','g', 'h','j', 'k', 'l','m','n','p','q','r','s','t','v','w','x','y','z'};
-
-List<string> names = new List<string> { "b", "c"," d", "f"," g","h","j","k","l","m", "n"," p","q","r", "s","t","v","w", "x","y", "z" }; //started using a list now instead of an array but this time it is a character 
-
-int sum = 0;
-int answer = 0;
-
-
-foreach(char c in question)
+class Program
 {
-    if (names.Contains(c))
+    static void Main()
     {
-        sum++;   
+        string question = "ab1cd23ef4gh";
+
+        // Define the consonants
+        HashSet<char> consonants = new HashSet<char>
+        {
+            'b', 'c', 'd','f','g', 'h','j', 'k', 'l','m','n','p','q','r','s','t','v','w','x','y','z'
+        };
+
+        int sumNumbers = 0;
+        int consonantCount = 0;
+
+        foreach (char c in question)
+        {
+            // Check if the character is a digit
+            if (char.IsDigit(c))
+            {
+                sumNumbers += c - '0';
+            }
+            // Check if the character is a consonant
+            else if (consonants.Contains(char.ToLower(c)))
+            {
+                consonantCount++;
+            }
+        }
+
+        int result = sumNumbers * consonantCount;
+        Console.WriteLine(result);
     }
-    answer += c-'0';
 }
-
-
-
-Console.WriteLine(answer*sum);
-
-
-string checker(string chcek)
-{
-    foreach(char c in chcek)
-    {
